@@ -1,5 +1,11 @@
 import React, { memo } from 'react';
+import { Header } from 'src/components';
+import './styles.css';
 
-const Main = () => <div>Hi dude</div>;
+const Main = () => (
+  <div className="mainContainer">
+    <Header />
+  </div>
+);
 
 export default memo(Main);

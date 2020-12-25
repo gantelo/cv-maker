@@ -1,0 +1,8 @@
+.headerContainer {
+  display: flex;
+  margin-top: 5%;
+}
+
+.nameContainer {
+  font-size: x-large;
+}

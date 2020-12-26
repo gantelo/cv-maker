@@ -1,6 +1,8 @@
-import React, { memo } from 'react';
-import { Header } from 'src/components';
 import './styles.css';
+
+import React, { memo } from 'react';
+
+import { Header } from 'src/components';
 
 const Main = () => (
   <div className="mainContainer">

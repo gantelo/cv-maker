@@ -1,12 +1,13 @@
-import React from 'react';
 import './styles.css';
 
-const Header = () => (
-  <div className="headerContainer">
-    <form>
-      <input type="text" className="nameContainer" />
-    </form>
-  </div>
-);
+import { InputClean } from 'src/components';
+
+const Header = () => {
+  return (
+    <div className="headerContainer">
+      <InputClean />
+    </div>
+  );
+};
 
 export default Header;

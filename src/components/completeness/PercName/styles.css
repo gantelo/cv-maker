@@ -1,0 +1,14 @@
+.percentageText {
+  font-weight: 600;
+  color: #4cbf06;
+  margin-right: 0.5rem;
+}
+
+.text {
+  color: #929292;
+}
+
+.percContainer {
+  display: flex;
+  flex-direction: row;
+}

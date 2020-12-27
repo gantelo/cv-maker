@@ -13,7 +13,7 @@ const inputName = 'name-input';
 const InputClean = ({ fontSize }: InputCleanProps) => {
   const [focused, setFocused] = useState(false);
   const [errored, setErrored] = useState(false);
-  const [value, setValue] = useState('Enter your name');
+  const [value, setValue] = useState('');
 
   const trigger = () => setErrored(!value);
 
@@ -39,6 +39,7 @@ const InputClean = ({ fontSize }: InputCleanProps) => {
           onMouseEnter={focusOn}
           onMouseLeave={focusOff}
           onBlur={trigger}
+          placeholder="Enter your name"
         />
         <span className="underline-animation" />
         <Edit className="editIcon" visibility={focused ? '' : 'hidden'} />

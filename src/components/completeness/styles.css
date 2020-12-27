@@ -1,4 +1,27 @@
 .completenessContainer {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.percBar {
+  transition: all 0.5s;
+  display: inline-block;
+  bottom: 0;
+  height: 2px;
+  background-color: #4cbf06;
+}
+
+.barContainer {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
 }

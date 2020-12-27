@@ -1,7 +1,8 @@
 import './styles.css';
 
+import { memo, useState } from 'react';
+
 import { ReactComponent as Edit } from 'src/assets/edit.svg';
-import { useState } from 'react';
 
 interface InputCleanProps {
   fontSize: string;
@@ -47,4 +48,4 @@ const InputClean = ({ fontSize }: InputCleanProps) => {
   );
 };
 
-export default InputClean;
+export default memo(InputClean);

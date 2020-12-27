@@ -1,5 +1,4 @@
-.headerContainer {
+.completenessContainer {
   display: flex;
-  margin-top: 5%;
   flex-direction: column;
 }

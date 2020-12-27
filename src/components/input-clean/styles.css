@@ -24,10 +24,23 @@
 }
 
 .nameContainer {
-  font-size: x-large;
   background-color: transparent;
   border: none;
   outline: none;
   text-align: center;
-  border-bottom: 2px solid red;
+}
+
+.nameError {
+  border-bottom: 2px solid #e03535;
+}
+
+.errorMessage {
+  position: relative;
+  color: #e03535;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

@@ -1,35 +1,49 @@
 import './styles.css';
 
 import { ReactComponent as Edit } from 'src/assets/edit.svg';
-import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 
-const InputClean = () => {
-  const [focused, setFocused] = useState(false);
-  const { register, handleSubmit, errors } = useForm();
+interface InputCleanProps {
+  fontSize: string;
+}
 
-  const onSubmit = (data: any) => console.log(data);
+const inputName = 'name-input';
+
+const InputClean = ({ fontSize }: InputCleanProps) => {
+  const [focused, setFocused] = useState(false);
+  const [errored, setErrored] = useState(false);
+  const [value, setValue] = useState('Enter your name');
+
+  const trigger = () => setErrored(!value);
 
   const focusOn = () => setFocused(true);
   const focusOff = () => setFocused(false);
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <div className="formContainer">
       <div className="inputContainer">
         <input
           type="text"
-          defaultValue="Input Name"
-          className="nameContainer"
-          name="name"
-          ref={register({ required: true })}
+          value={value}
+          onChange={(e) => {
+            setValue(e.target.value);
+
+            if (errored) {
+              trigger();
+            }
+          }}
+          className={`nameContainer ${errored ? 'nameError' : ''} ${fontSize}`}
+          name={inputName}
           autoComplete="off"
           onMouseEnter={focusOn}
           onMouseLeave={focusOff}
+          onBlur={trigger}
         />
         <span className="underline-animation" />
         <Edit className="editIcon" visibility={focused ? '' : 'hidden'} />
       </div>
-    </form>
+      {errored && <span className="errorMessage text-s">Value must not be empty</span>}
+    </div>
   );
 };
 

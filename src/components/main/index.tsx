@@ -1,12 +1,12 @@
 import './styles.css';
 
+import { Body, Header } from 'src/components';
 import React, { memo } from 'react';
-
-import { Header } from 'src/components';
 
 const Main = () => (
   <div className="mainContainer">
     <Header />
+    <Body />
   </div>
 );
 

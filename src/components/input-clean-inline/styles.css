@@ -1,0 +1,44 @@
+.inputContainerInline {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.underline-animationInline {
+  transition: all 0.5s;
+  display: inline-block;
+  bottom: 0;
+  left: -100%;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #66b6c1;
+}
+
+.inputContainerInline > input[type='text']:focus + .underline-animationInline {
+  left: 0;
+}
+
+.editIconInline {
+  position: relative;
+}
+
+.nameContainerInline {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.nameErrorInline {
+  border-bottom: 2px solid #e03535;
+}
+
+.errorMessageInline {
+  position: relative;
+  color: #e03535;
+}
+
+.formContainerInline {
+  display: flex;
+  flex-direction: column;
+}

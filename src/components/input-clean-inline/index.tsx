@@ -4,17 +4,20 @@ import { memo, useState } from 'react';
 
 import { ReactComponent as Edit } from 'src/assets/edit.svg';
 
+//TODO: HOC inlines
+
 interface InputCleanProps {
   fontSize: string;
   fontWeight: string;
+  defaultValue: string;
 }
 
 const inputName = 'name-input';
 
-const InputClean = ({ fontSize, fontWeight }: InputCleanProps) => {
+const InputCleanInline = ({ fontSize, fontWeight, defaultValue }: InputCleanProps) => {
   const [focused, setFocused] = useState(false);
   const [errored, setErrored] = useState(false);
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState(defaultValue);
 
   const trigger = () => setErrored(!value);
 
@@ -22,8 +25,8 @@ const InputClean = ({ fontSize, fontWeight }: InputCleanProps) => {
   const focusOff = () => setFocused(false);
 
   return (
-    <div className="formContainer">
-      <div className="inputContainer">
+    <div className="formContainerInline">
+      <div className="inputContainerInline">
         <input
           type="text"
           value={value}
@@ -34,20 +37,20 @@ const InputClean = ({ fontSize, fontWeight }: InputCleanProps) => {
               trigger();
             }
           }}
-          className={`nameContainer ${errored ? 'nameError' : ''} ${fontSize} ${fontWeight}`}
+          className={`nameContainerInline ${errored ? 'nameErrorInline' : ''} ${fontSize} ${fontWeight}`}
           name={inputName}
           autoComplete="off"
           onMouseEnter={focusOn}
           onMouseLeave={focusOff}
           onBlur={trigger}
-          placeholder="Enter your name"
+          placeholder="Enter title"
         />
-        <span className="underline-animation" />
-        <Edit className="editIcon" visibility={focused ? '' : 'hidden'} />
+        <span className="underline-animationInline" />
+        <Edit className="editIconInline" visibility={focused ? '' : 'hidden'} />
       </div>
-      {errored && <span className="errorMessage text-s">Value must not be empty</span>}
+      {errored && <span className="errorMessageInline text-s">Value must not be empty</span>}
     </div>
   );
 };
 
-export default memo(InputClean);
+export default memo(InputCleanInline);

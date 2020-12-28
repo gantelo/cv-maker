@@ -1,6 +1,7 @@
 import './styles.css';
 
 import { PercName } from './PercName';
+import { memo } from 'react';
 
 const Completeness = () => {
   return (
@@ -16,4 +17,4 @@ const Completeness = () => {
   );
 };
 
-export default Completeness;
+export default memo(Completeness);

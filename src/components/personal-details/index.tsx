@@ -7,7 +7,7 @@ const PersonalDetails = () => (
     <InputCleanInline fontSize="text-l" fontWeight="text-bold" defaultValue="Personal Details" />
     <div className={styles.inputContainer}>
       <InputFull label="Job Title" />
-      <InputFull label="Sarlanga" />
+      {/* <InputFull label="Sarlanga" /> */}
     </div>
     <div className={styles.inputContainer}>
       <InputFull label="First Name" />

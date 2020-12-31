@@ -1,0 +1,56 @@
+.container {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  width: 46%;
+}
+
+.label {
+  color: #929292;
+  margin-bottom: 5px;
+  font-size: small;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.inputContainer {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.underlineAnimation {
+  transition: all 0.5s;
+  display: inline-block;
+  bottom: 0;
+  left: -100%;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #66b6c1;
+}
+
+.inputContainer > input[type='text']:focus + .underlineAnimation {
+  left: 0;
+}
+
+.nameContainer {
+  background-color: #eef4f4;
+  height: 2rem;
+  padding-left: 4%;
+  color: #555555;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.nameError {
+  border-bottom: 2px solid #e03535;
+  background-color: #e035352f;
+}

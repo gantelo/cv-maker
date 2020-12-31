@@ -1,10 +1,10 @@
-.inputContainerInline {
+.inputContainer {
   position: relative;
   display: inline-block;
   overflow: hidden;
 }
 
-.underline-animationInline {
+.underlineAnimation {
   transition: all 0.5s;
   display: inline-block;
   bottom: 0;
@@ -15,30 +15,32 @@
   background-color: #66b6c1;
 }
 
-.inputContainerInline > input[type='text']:focus + .underline-animationInline {
+.inputContainer > input[type='text']:focus + .underlineAnimation {
   left: 0;
 }
 
-.editIconInline {
+.editIcon {
   position: relative;
 }
 
-.nameContainerInline {
+.nameContainer {
   background-color: transparent;
   border: none;
   outline: none;
 }
 
-.nameErrorInline {
+.nameError {
   border-bottom: 2px solid #e03535;
 }
 
-.errorMessageInline {
+.errorMessage {
   position: relative;
   color: #e03535;
+  font-size: small;
 }
 
-.formContainerInline {
+.formContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  width: 35%;
 }

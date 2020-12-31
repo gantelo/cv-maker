@@ -1,0 +1,22 @@
+.nameContainer {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.nameError {
+  border-bottom: 2px solid #e03535;
+}
+
+.errorMessage {
+  position: relative;
+  color: #e03535;
+  font-size: small;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

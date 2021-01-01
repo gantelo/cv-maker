@@ -1,6 +1,6 @@
 import './styles.css';
 
-import { Body, Header } from 'src/components';
+import { Body, Header } from 'src/sections';
 import React, { memo } from 'react';
 
 const Main = () => (

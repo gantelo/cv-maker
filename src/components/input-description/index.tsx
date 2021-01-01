@@ -16,7 +16,7 @@ const InputFull = ({}: InputDescriptionProps) => {
               setValue(e.target.value);
             }}
             className={`${styles.nameContainer} text-m text-normal`}
-            name="description-input"
+            name="description-text"
             autoComplete="off"
             wrap="hard"
           />

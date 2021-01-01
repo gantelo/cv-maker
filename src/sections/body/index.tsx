@@ -1,6 +1,6 @@
 import './styles.css';
 
-import { EmploymentHistory, PersonalDetails, ProfessionalSummary } from 'src/components';
+import { EmploymentHistory, PersonalDetails, ProfessionalSummary } from 'src/sections';
 
 const Body = () => (
   <div className="bodyContainer">

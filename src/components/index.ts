@@ -1,9 +1,12 @@
 export { default as Body } from './body';
 export { default as Completeness } from './completeness';
+export { default as EmploymentHistory } from './employment-history';
 export { default as Header } from './header';
 export { default as Input } from './input';
 export { default as InputClean } from './input/input-clean';
-export { default as InputFull } from './input/input-full';
 export { default as InputCleanInline } from './input/input-clean-inline';
+export { default as InputDescription } from './input-description';
+export { default as InputFull } from './input/input-full';
 export { default as Main } from './main';
 export { default as PersonalDetails } from './personal-details';
+export { default as ProfessionalSummary } from './professional-summary';

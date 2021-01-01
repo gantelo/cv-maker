@@ -7,9 +7,10 @@ interface InputCleanProps {
   fontSize: string;
   fontWeight: string;
   defaultValue: string;
+  label?: string;
 }
 
-const InputClean = ({ fontSize, fontWeight, defaultValue }: InputCleanProps) => {
+const InputClean = ({ fontSize, fontWeight, defaultValue, label }: InputCleanProps) => {
   const props = {
     fontSize,
     fontWeight,
@@ -18,7 +19,12 @@ const InputClean = ({ fontSize, fontWeight, defaultValue }: InputCleanProps) => 
     overrideStyles: styles,
   };
 
-  return <Input {...props} />;
+  return (
+    <div>
+      <Input {...props} />
+      {Boolean(label) && <span className={styles.headerLabel}>{label}</span>}
+    </div>
+  );
 };
 
 export default memo(InputClean);

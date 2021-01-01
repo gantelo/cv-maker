@@ -2,7 +2,7 @@ import { Input } from 'src/components';
 import styles from './styles.module.css';
 
 interface InputFullProps {
-  label: string;
+  label?: string;
 }
 
 const InputFull = ({ label }: InputFullProps) => {
@@ -17,7 +17,7 @@ const InputFull = ({ label }: InputFullProps) => {
 
   return (
     <div className={styles.container}>
-      <span className={styles.label}>{label}</span>
+      {Boolean(label) && <span className={styles.label}>{label}</span>}
       <Input {...props} />
     </div>
   );

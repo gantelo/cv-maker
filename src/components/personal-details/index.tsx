@@ -1,6 +1,6 @@
 import styles from './styles.module.css';
 
-import { Input, InputCleanInline, InputFull } from 'src/components';
+import { InputCleanInline, InputFull } from 'src/components';
 
 const PersonalDetails = () => (
   <div className={styles.personalDetailsContainer}>

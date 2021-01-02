@@ -21,12 +21,12 @@ const History = () => {
       </button>
       <div className={styles.content} style={{ maxHeight: active ? '420px' : '0px' }}>
         <div className={styles.inputContainer}>
-          <InputFull label="Job Title" />
-          <InputFull label="Employer" />
+          {/* <InputFull label="Job Title" />
+          <InputFull label="Employer" /> */}
         </div>
         <div className={styles.inputContainer}>
-          <InputFull label={'Start & End Date'} />
-          <InputFull label="City" />
+          {/* <InputFull label={'Start & End Date'} />
+          <InputFull label="City" /> */}
         </div>
         <div>
           <span className={styles.label}>Describe briefly your responsibilities</span>

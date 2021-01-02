@@ -8,15 +8,19 @@ interface InputCleanProps {
   fontWeight: string;
   defaultValue: string;
   label?: string;
+  value: string;
+  setValue: Function;
 }
 
-const InputClean = ({ fontSize, fontWeight, defaultValue, label }: InputCleanProps) => {
+const InputClean = ({ fontSize, fontWeight, defaultValue, label, value, setValue }: InputCleanProps) => {
   const props = {
     fontSize,
     fontWeight,
     defaultValue,
     editIcon: true,
     overrideStyles: styles,
+    value,
+    setValue,
   };
 
   return (

@@ -3,16 +3,19 @@ import styles from './styles.module.css';
 
 interface InputFullProps {
   label?: string;
+  value: string;
+  setValue: (newVal: string) => void;
 }
 
-const InputFull = ({ label }: InputFullProps) => {
+const InputFull = ({ label, value, setValue }: InputFullProps) => {
   const props = {
     fontSize: 'text-m',
     fontWeight: 'text-normal',
-    defaultValue: '',
     editIcon: false,
     overrideStyles: styles,
     placeholder: label,
+    value,
+    setValue,
   };
 
   return (

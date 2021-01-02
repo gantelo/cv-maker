@@ -9,18 +9,18 @@ import { ReactComponent as Edit } from 'src/assets/edit.svg';
 interface InputProps {
   fontSize: string;
   fontWeight: string;
-  defaultValue: string;
   overrideStyles?: any;
   editIcon?: boolean;
   placeholder?: string;
+  value: string;
+  setValue: (newVal: string) => void;
 }
 
 const inputName = 'name-input';
 
-const Input = ({ fontSize, fontWeight, defaultValue, overrideStyles, editIcon, placeholder }: InputProps) => {
+const Input = ({ fontSize, fontWeight, overrideStyles, editIcon, placeholder, value, setValue }: InputProps) => {
   const [focused, setFocused] = useState(false);
   const [errored, setErrored] = useState(false);
-  const [value, setValue] = useState(defaultValue);
 
   const trigger = () => setErrored(!value);
 

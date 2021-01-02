@@ -7,6 +7,8 @@ const EmploymentHistory = () => (
       fontWeight="text-bold"
       defaultValue="Employment History"
       label="Include relevant experience and dates in this section. List your most recent position first."
+      value=""
+      setValue={() => {}}
     />
     <div>
       <History />

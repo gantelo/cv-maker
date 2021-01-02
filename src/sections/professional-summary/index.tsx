@@ -7,6 +7,8 @@ const ProfessionalSummary = () => (
       fontWeight="text-bold"
       defaultValue="Professional Summary"
       label="Include 2-3 clear sentences about your overall experience."
+      value=""
+      setValue={() => {}}
     />
     <div>
       <InputDescription />

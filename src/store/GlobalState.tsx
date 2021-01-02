@@ -1,15 +1,17 @@
-import React, { createContext, memo, PropsWithChildren, useReducer, Dispatch, useState } from 'react';
-
 import { IGlobalState, IReducer } from './types';
-import { combineReducers } from 'src/utils/combineReducers';
+import React, { Dispatch, PropsWithChildren, createContext, memo, useReducer } from 'react';
+
 import { Deps } from 'src/models/general';
+import { combineReducers } from 'src/utils/combineReducers';
+import { headerFallbackState } from './header/state';
+import { reducer as headerReducer } from './header/reducer';
 
 export const initialState: IGlobalState = {
-  header: { name: '', nationality: '', title: '' },
+  header: headerFallbackState(),
 };
 
 export const combinedReducer = combineReducers<IGlobalState>({
-  header: () => {},
+  header: headerReducer,
 });
 
 export const GlobalContext = createContext<{

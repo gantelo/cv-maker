@@ -1,7 +1,7 @@
 export interface IHeader {
-  title: string;
   name: string;
-  nationality: string;
+  percentage: number;
+  nationality?: string;
 }
 
 export interface ISections {

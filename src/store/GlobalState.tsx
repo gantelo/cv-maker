@@ -5,13 +5,17 @@ import { Deps } from 'src/models/general';
 import { combineReducers } from 'src/utils/combineReducers';
 import { headerFallbackState } from './header/state';
 import { reducer as headerReducer } from './header/reducer';
+import { reducer as personalDetailsReducer } from './personal-details/reducer';
+import { personalDetailsFallbackState } from './personal-details/state';
 
 export const initialState: IGlobalState = {
   header: headerFallbackState(),
+  personalDetails: personalDetailsFallbackState(),
 };
 
 export const combinedReducer = combineReducers<IGlobalState>({
   header: headerReducer,
+  personalDetails: personalDetailsReducer,
 });
 
 export const GlobalContext = createContext<{

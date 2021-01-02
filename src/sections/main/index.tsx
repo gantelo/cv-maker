@@ -6,7 +6,7 @@ import React, { memo } from 'react';
 const Main = () => (
   <div className="mainContainer">
     <Header />
-    {/* <Body /> */}
+    <Body />
   </div>
 );
 

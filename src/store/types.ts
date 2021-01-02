@@ -1,4 +1,4 @@
-import { IHeader } from 'src/models/general';
+import { IHeader, IPersonalDetails } from 'src/models/general';
 
 export interface IAction<T = string, P = any> {
   type: T;
@@ -7,6 +7,7 @@ export interface IAction<T = string, P = any> {
 
 export type IGlobalState = {
   header: IHeader;
+  personalDetails: IPersonalDetails;
 };
 
 export type IReducer<S = any, A = any> = (state: S, action: IAction<A>) => S;

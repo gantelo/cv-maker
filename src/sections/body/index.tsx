@@ -1,12 +1,12 @@
 import './styles.css';
 
-import { EmploymentHistory, PersonalDetails, ProfessionalSummary } from 'src/sections';
+import { EmploymentHistory, PersonalDetailsComponent, ProfessionalSummary } from 'src/sections';
 
 const Body = () => (
   <div className="bodyContainer">
-    <PersonalDetails />
-    <ProfessionalSummary />
-    <EmploymentHistory />
+    <PersonalDetailsComponent />
+    {/* <ProfessionalSummary />
+    <EmploymentHistory /> */}
   </div>
 );
 

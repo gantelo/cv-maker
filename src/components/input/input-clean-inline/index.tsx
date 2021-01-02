@@ -9,7 +9,7 @@ interface InputCleanProps {
   defaultValue: string;
   label?: string;
   value: string;
-  setValue: Function;
+  setValue: (newVal: string) => void;
 }
 
 const InputClean = ({ fontSize, fontWeight, defaultValue, label, value, setValue }: InputCleanProps) => {

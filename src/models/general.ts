@@ -41,8 +41,8 @@ export interface IProfessionalSummary {
 }
 
 export enum History {
-  JOB_TITLE = 'Job Title',
-  EMPLOYER = 'Employer',
+  JOB_TITLE = 'Title',
+  EMPLOYER = 'Location',
   START_END_DATE = 'Start - End dates',
   CITY = 'City',
   DESCRIPTION = 'Description',

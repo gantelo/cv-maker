@@ -5,3 +5,4 @@ export { default as InputCleanInline } from './input/input-clean-inline';
 export { default as InputDescription } from './input-description';
 export { default as InputFull } from './input/input-full';
 export { default as HistoryComponent } from './history';
+export { default as HistoryList } from './HistoryList';

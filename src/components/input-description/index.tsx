@@ -18,7 +18,7 @@ const InputFull = ({ value, setValue }: InputDescriptionProps) => {
             }}
             className={`${styles.nameContainer} text-m text-normal`}
             name="description-text"
-            autoComplete="off"
+            autoComplete={'' + Math.random()}
             wrap="hard"
           />
           <span className={styles.underlineAnimation} />

@@ -34,3 +34,8 @@ export interface IPersonalDetails {
   [PersonalDetails.COUNTRY]: string;
   [PersonalDetails.CITY]: string;
 }
+
+export interface IProfessionalSummary {
+  sectionTitle: string;
+  summary: string;
+}

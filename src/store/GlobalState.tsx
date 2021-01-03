@@ -6,16 +6,20 @@ import { combineReducers } from 'src/utils/combineReducers';
 import { headerFallbackState } from './header/state';
 import { reducer as headerReducer } from './header/reducer';
 import { reducer as personalDetailsReducer } from './personal-details/reducer';
+import { reducer as professionalSummaryDetailsReducer } from './professional-summary/reducer';
 import { personalDetailsFallbackState } from './personal-details/state';
+import { professionalSummaryFallbackState } from './professional-summary/state';
 
 export const initialState: IGlobalState = {
   header: headerFallbackState(),
   personalDetails: personalDetailsFallbackState(),
+  professionalSummary: professionalSummaryFallbackState(),
 };
 
 export const combinedReducer = combineReducers<IGlobalState>({
   header: headerReducer,
   personalDetails: personalDetailsReducer,
+  professionalSummary: professionalSummaryDetailsReducer,
 });
 
 export const GlobalContext = createContext<{

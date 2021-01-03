@@ -30,7 +30,7 @@ const History = () => {
         </div>
         <div>
           <span className={styles.label}>Describe briefly your responsibilities</span>
-          <InputDescription />
+          {/* <InputDescription /> */}
         </div>
       </div>
     </div>

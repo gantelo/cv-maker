@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import styles from './styles.module.css';
 
-interface InputDescriptionProps {}
+interface InputDescriptionProps {
+  value: string;
+  setValue: (newVal: string) => void;
+}
 
-const InputFull = ({}: InputDescriptionProps) => {
-  const [value, setValue] = useState('');
-
+const InputFull = ({ value, setValue }: InputDescriptionProps) => {
   return (
     <div className={styles.container}>
       <div className={styles.formContainer}>

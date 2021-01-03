@@ -6,7 +6,7 @@ const Body = () => (
   <div className="bodyContainer">
     <PersonalDetailsComponent />
     <ProfessionalSummaryComponent />
-    {/* <EmploymentHistory />  */}
+    <EmploymentHistory />
   </div>
 );
 

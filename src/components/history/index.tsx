@@ -1,11 +1,28 @@
-import { useState } from 'react';
+import { useReducer, useState } from 'react';
 
 import { ReactComponent as ArrowDown } from 'src/assets/ArrowDown.svg';
 import { InputFull, InputDescription } from 'src/components/index';
+import { History, IHistory } from 'src/models/general';
+import { initialState, reducer } from './reducer';
 import styles from './styles.module.css';
 
-const History = () => {
+interface HistoryComponentProps {
+  setItem: (item: IHistory) => void;
+}
+
+const HistoryComponent = ({ setItem }: HistoryComponentProps) => {
+  const [state, dispatch] = useReducer(reducer, initialState);
   const [active, setActive] = useState(false);
+
+  const abstractInput = (field: History) => {
+    return {
+      label: field,
+      value: state[field],
+      setValue: (value: string) => {
+        dispatch({ type: field, payload: value });
+      },
+    };
+  };
 
   return (
     <div className={styles.container}>
@@ -14,27 +31,29 @@ const History = () => {
         className={`${styles.collapsible} ${active ? 'active' : ''}`}
         onClick={() => setActive(!active)}>
         <div className={styles.textContainer}>
-          <div className={styles.title}>React Native Developer at MakingSense</div>
-          <div className={styles.subTitle}>Jul 2020 - Present</div>
+          <div className={styles.title}>
+            {state[History.JOB_TITLE]} at {state[History.EMPLOYER]}
+          </div>
+          <div className={styles.subTitle}>{state[History.START_END_DATE]}</div>
         </div>
         <ArrowDown className={`${styles.arrow} ${active ? styles.rotateIn : styles.rotateOut}`} />
       </button>
       <div className={styles.content} style={{ maxHeight: active ? '420px' : '0px' }}>
         <div className={styles.inputContainer}>
-          {/* <InputFull label="Job Title" />
-          <InputFull label="Employer" /> */}
+          <InputFull {...abstractInput(History.JOB_TITLE)} />
+          <InputFull {...abstractInput(History.EMPLOYER)} />
         </div>
         <div className={styles.inputContainer}>
-          {/* <InputFull label={'Start & End Date'} />
-          <InputFull label="City" /> */}
+          <InputFull {...abstractInput(History.START_END_DATE)} />
+          <InputFull {...abstractInput(History.CITY)} />
         </div>
         <div>
           <span className={styles.label}>Describe briefly your responsibilities</span>
-          {/* <InputDescription /> */}
+          <InputDescription {...abstractInput(History.DESCRIPTION)} />
         </div>
       </div>
     </div>
   );
 };
 
-export default History;
+export default HistoryComponent;

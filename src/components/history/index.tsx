@@ -1,4 +1,4 @@
-import { useEffect, useReducer, useState } from 'react';
+import { memo, useEffect, useReducer, useState } from 'react';
 
 import { ReactComponent as ArrowDown } from 'src/assets/ArrowDown.svg';
 import { InputFull, InputDescription } from 'src/components/index';
@@ -63,4 +63,4 @@ const HistoryComponent = ({ setItem }: HistoryComponentProps) => {
   );
 };
 
-export default HistoryComponent;
+export default memo(HistoryComponent);

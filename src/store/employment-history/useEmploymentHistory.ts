@@ -14,8 +14,16 @@ export const useEmploymentHistory = () => {
     dispatch(actions.setItem(item, index));
   };
 
-  return useMemo(() => ({ setSectionTitle, setItem, employmentHistory: state.employmentHistory }), [
-    setSectionTitle,
-    setItem,
-  ]);
+  const addItem = (): void => {
+    dispatch(actions.addItem());
+  };
+
+  const removeItem = (): void => {
+    dispatch(actions.removeItem());
+  };
+
+  return useMemo(
+    () => ({ setSectionTitle, setItem, employmentHistory: state.employmentHistory, addItem, removeItem }),
+    [setSectionTitle, setItem, addItem, removeItem],
+  );
 };

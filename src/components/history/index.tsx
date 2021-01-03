@@ -1,8 +1,9 @@
-import { useReducer, useState } from 'react';
+import { useEffect, useReducer, useState } from 'react';
 
 import { ReactComponent as ArrowDown } from 'src/assets/ArrowDown.svg';
 import { InputFull, InputDescription } from 'src/components/index';
 import { History, IHistory } from 'src/models/general';
+import { useDebounce } from 'src/utils/debounce';
 import { initialState, reducer } from './reducer';
 import styles from './styles.module.css';
 
@@ -23,6 +24,12 @@ const HistoryComponent = ({ setItem }: HistoryComponentProps) => {
       },
     };
   };
+
+  const debouncedHistoryItemUpdate = useDebounce(() => {
+    setItem(state);
+  }, 1000);
+
+  useEffect(debouncedHistoryItemUpdate, [state]);
 
   return (
     <div className={styles.container}>

@@ -3,7 +3,6 @@ import { IAction } from '../types';
 import { IPersonalDetails, PersonalDetails } from 'src/models/general';
 
 export const reducer = (state: IPersonalDetails, { type, payload }: IAction): IPersonalDetails => {
-  console.log('xd::', type, ':::', payload);
   switch (type) {
     case ACTION_TYPE.SET_CITY:
       return { ...state, [PersonalDetails.CITY]: payload };

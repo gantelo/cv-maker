@@ -55,3 +55,8 @@ export interface IHistory {
   [History.DESCRIPTION]: string;
   [History.CITY]: string;
 }
+
+export interface IEmploymentHistory {
+  sectionTitle: string;
+  items: IHistory[];
+}

@@ -13,7 +13,7 @@ const MinimalHistoryList = ({ setItem, items, addItem, removeItem }: MinimalHist
   return (
     <div className={styles.container}>
       {items.map((_item, idx) => (
-        <div key={`minimal-history-${idx}-${Math.random()}`} className={styles.historyContainer}>
+        <div key={`minimal-history-${idx}`} className={styles.historyContainer}>
           <MinimalHistoryComponent
             setItem={(item: IMinimalHistory) => {
               setItem(item, idx);

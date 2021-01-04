@@ -13,7 +13,7 @@ const HistoryList = ({ setItem, items, addItem, removeItem }: HistoryListProps) 
   return (
     <div className={styles.container}>
       {items.map((_item, idx) => (
-        <div key={`employment-history-${Math.random()}-${idx}`} className={styles.historyContainer}>
+        <div key={`employment-history-${idx}`} className={styles.historyContainer}>
           <HistoryComponent
             setItem={(item: IHistory) => {
               setItem(item, idx);

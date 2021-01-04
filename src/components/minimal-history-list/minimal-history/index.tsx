@@ -9,9 +9,10 @@ import styles from './styles.module.css';
 
 interface MinimalHistoryComponentProps {
   setItem: (item: IMinimalHistory) => void;
+  nameOnly?: boolean;
 }
 
-const MinimalHistoryComponent = ({ setItem }: MinimalHistoryComponentProps) => {
+const MinimalHistoryComponent = ({ setItem, nameOnly }: MinimalHistoryComponentProps) => {
   const [state, dispatch] = useReducer(reducer, initialState);
   const [active, setActive] = useState(false);
 
@@ -38,15 +39,15 @@ const MinimalHistoryComponent = ({ setItem }: MinimalHistoryComponentProps) => {
         className={`${styles.collapsible} ${active ? 'active' : ''}`}
         onClick={() => setActive(!active)}>
         <div className={styles.textContainer}>
-          <div className={styles.title}>{state[MinimalHistory.NAME]}</div>
-          <div className={styles.subTitle}>{state[MinimalHistory.VALUE]}</div>
+          <div className={styles.title}>{state[MinimalHistory.NAME] || 'Describe Field'}</div>
+          {!nameOnly && <div className={styles.subTitle}>{state[MinimalHistory.VALUE]}</div>}
         </div>
         <ArrowDown className={`${styles.arrow} ${active ? styles.rotateIn : styles.rotateOut}`} />
       </button>
       <div className={styles.content} style={{ maxHeight: active ? '420px' : '0px' }}>
         <div className={styles.inputContainer}>
           <InputFull {...abstractInput(MinimalHistory.NAME)} />
-          <InputFull {...abstractInput(MinimalHistory.VALUE)} />
+          {!nameOnly && <InputFull {...abstractInput(MinimalHistory.VALUE)} />}
         </div>
       </div>
     </div>

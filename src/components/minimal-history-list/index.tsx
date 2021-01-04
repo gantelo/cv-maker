@@ -7,9 +7,10 @@ interface MinimalHistoryListProps {
   items: IMinimalHistory[];
   addItem: () => void;
   removeItem: () => void;
+  nameOnly?: boolean;
 }
 
-const MinimalHistoryList = ({ setItem, items, addItem, removeItem }: MinimalHistoryListProps) => {
+const MinimalHistoryList = ({ setItem, items, addItem, removeItem, nameOnly }: MinimalHistoryListProps) => {
   return (
     <div className={styles.container}>
       {items.map((_item, idx) => (
@@ -18,6 +19,7 @@ const MinimalHistoryList = ({ setItem, items, addItem, removeItem }: MinimalHist
             setItem={(item: IMinimalHistory) => {
               setItem(item, idx);
             }}
+            nameOnly={nameOnly}
           />
           {idx === items.length - 1 && (
             <a onClick={removeItem} className={styles.delete}>

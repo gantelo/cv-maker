@@ -17,3 +17,8 @@ export interface ISkills {
   sectionTitle: string;
   items: IMinimalHistory[];
 }
+
+export interface IInterests {
+  sectionTitle: string;
+  items: IMinimalHistory[];
+}

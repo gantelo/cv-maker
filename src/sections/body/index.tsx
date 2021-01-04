@@ -1,10 +1,13 @@
 import './styles.css';
 
 import {
+  EducationHistory,
   EmploymentHistory,
+  Links,
   PersonalDetailsComponent,
   ProfessionalSummaryComponent,
-  EducationHistory,
+  Skills,
+  Interests,
 } from 'src/sections';
 
 const Body = () => (
@@ -13,6 +16,9 @@ const Body = () => (
     <ProfessionalSummaryComponent />
     <EmploymentHistory />
     <EducationHistory />
+    <Links />
+    <Skills />
+    <Interests />
   </div>
 );
 

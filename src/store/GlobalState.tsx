@@ -9,10 +9,16 @@ import { reducer as personalDetailsReducer } from './personal-details/reducer';
 import { reducer as professionalSummaryDetailsReducer } from './professional-summary/reducer';
 import { reducer as employmentHistoryReducer } from './employment-history/reducer';
 import { reducer as educationHistoryReducer } from './education-history/reducer';
+import { reducer as linksHistoryReducer } from './links-history/reducer';
+import { reducer as skillsHistoryReducer } from './skills-history/reducer';
+import { reducer as interestsHistoryReducer } from './interests-history/reducer';
 import { personalDetailsFallbackState } from './personal-details/state';
 import { professionalSummaryFallbackState } from './professional-summary/state';
 import { employmentHistoryFallbackState } from './employment-history/state';
 import { educationHistoryFallbackState } from './education-history/state';
+import { skillsFallbackState } from './skills-history/state';
+import { linksFallbackState } from './links-history/state';
+import { interestsFallbackState } from './interests-history/state';
 
 export const initialState: IGlobalState = {
   header: headerFallbackState(),
@@ -20,6 +26,9 @@ export const initialState: IGlobalState = {
   professionalSummary: professionalSummaryFallbackState(),
   employmentHistory: employmentHistoryFallbackState(),
   educationHistory: educationHistoryFallbackState(),
+  skills: skillsFallbackState(),
+  links: linksFallbackState(),
+  interests: interestsFallbackState(),
 };
 
 export const combinedReducer = combineReducers<IGlobalState>({
@@ -28,6 +37,9 @@ export const combinedReducer = combineReducers<IGlobalState>({
   professionalSummary: professionalSummaryDetailsReducer,
   employmentHistory: employmentHistoryReducer,
   educationHistory: educationHistoryReducer,
+  links: linksHistoryReducer,
+  interests: interestsHistoryReducer,
+  skills: skillsHistoryReducer,
 });
 
 export const GlobalContext = createContext<{

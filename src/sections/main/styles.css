@@ -1,8 +1,27 @@
 .mainContainer {
-  background-color: #f9f9f3;
+  background-color: #f9f9f321;
   min-height: 100vh;
-  max-width: 768px;
   align-items: center;
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+.latexContainer {
+  background-color: #929292;
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.massiveContainer {
+  display: flex;
+}
+
+@media screen and (max-width: 968px) {
+  .latexContainer {
+    display: none;
+  }
 }

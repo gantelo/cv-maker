@@ -1,4 +1,4 @@
-import { HistoryComponent } from 'src/components';
+import { default as HistoryComponent } from './history';
 import { IHistory } from 'src/models/history';
 import styles from './styles.module.css';
 
@@ -13,7 +13,7 @@ const HistoryList = ({ setItem, items, addItem, removeItem }: HistoryListProps) 
   return (
     <div className={styles.container}>
       {items.map((_item, idx) => (
-        <div key={`employment-history-${_item['Start - End dates']}-${idx}`} className={styles.historyContainer}>
+        <div key={`employment-history-${Math.random()}-${idx}`} className={styles.historyContainer}>
           <HistoryComponent
             setItem={(item: IHistory) => {
               setItem(item, idx);

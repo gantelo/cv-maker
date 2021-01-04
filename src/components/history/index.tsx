@@ -2,7 +2,7 @@ import { memo, useEffect, useReducer, useState } from 'react';
 
 import { ReactComponent as ArrowDown } from 'src/assets/ArrowDown.svg';
 import { InputFull, InputDescription } from 'src/components/index';
-import { History, IHistory } from 'src/models/general';
+import { History, IHistory } from 'src/models/history';
 import { useDebounce } from 'src/utils/debounce';
 import { initialState, reducer } from './reducer';
 import styles from './styles.module.css';

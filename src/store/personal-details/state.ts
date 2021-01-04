@@ -1,4 +1,4 @@
-import { IPersonalDetails, PersonalDetails } from 'src/models/general';
+import { IPersonalDetails, PersonalDetails } from 'src/models/personalDetails';
 
 export const personalDetailsFallbackState = (): IPersonalDetails => ({
   [PersonalDetails.JOB_TITLE]: '',

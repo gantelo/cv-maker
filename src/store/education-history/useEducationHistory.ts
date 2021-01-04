@@ -3,7 +3,7 @@ import { IHistory } from 'src/models/history';
 import { GlobalContext } from '../GlobalState';
 import { actions } from './actions';
 
-export const useEmploymentHistory = () => {
+export const useEducationHistory = () => {
   const { dispatch, state } = useContext(GlobalContext);
 
   const setSectionTitle = (value: string): void => {
@@ -22,8 +22,10 @@ export const useEmploymentHistory = () => {
     dispatch(actions.removeItem());
   };
 
-  return useMemo(
-    () => ({ setSectionTitle, setItem, employmentHistory: state.employmentHistory, addItem, removeItem }),
-    [setSectionTitle, setItem, addItem, removeItem],
-  );
+  return useMemo(() => ({ setSectionTitle, setItem, educationHistory: state.educationHistory, addItem, removeItem }), [
+    setSectionTitle,
+    setItem,
+    addItem,
+    removeItem,
+  ]);
 };

@@ -22,7 +22,7 @@ const Input = ({ fontSize, fontWeight, overrideStyles, editIcon, placeholder, va
   const [focused, setFocused] = useState(false);
   const [errored, setErrored] = useState(false);
 
-  const trigger = () => setErrored(!value);
+  const trigger = () => setErrored(false); //add !value if we want to make this somewhat required. But i'm deprecating it for now
 
   const focusOn = () => setFocused(true);
   const focusOff = () => setFocused(false);
@@ -44,7 +44,7 @@ const Input = ({ fontSize, fontWeight, overrideStyles, editIcon, placeholder, va
             errored ? overrideStyles?.nameError || styles.nameError : ''
           } ${fontSize} ${fontWeight}`}
           name={inputName}
-          autoComplete="new-password"
+          autoComplete={'' + Math.random()}
           onMouseEnter={focusOn}
           onMouseLeave={focusOff}
           onBlur={trigger}

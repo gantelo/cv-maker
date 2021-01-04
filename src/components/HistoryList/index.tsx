@@ -1,5 +1,5 @@
 import { HistoryComponent } from 'src/components';
-import { IHistory } from 'src/models/general';
+import { IHistory } from 'src/models/history';
 import styles from './styles.module.css';
 
 interface HistoryListProps {
@@ -26,9 +26,10 @@ const HistoryList = ({ setItem, items, addItem, removeItem }: HistoryListProps) 
           )}
         </div>
       ))}
-      <button type="button" className={styles.addHistory} onClick={addItem}>
+      <a className={styles.addHistory} onClick={addItem}>
+        <span style={{ fontWeight: 700 }}>+ </span>
         Add Item
-      </button>
+      </a>
     </div>
   );
 };

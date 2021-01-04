@@ -1,10 +1,10 @@
 import { IHistory } from 'src/models/history';
 
 export enum ACTION_TYPE {
-  SET_SECTION_TITLE = '[employment history] section title updated',
-  SET_ITEM = '[employment history]  Job Title updated',
-  ADD_ITEM = '[employment history] history added',
-  REMOVE_ITEM = '[employment history] history deleted',
+  SET_SECTION_TITLE = '[education history] section title updated',
+  SET_ITEM = '[education history]  Job Title updated',
+  ADD_ITEM = '[education history] history added',
+  REMOVE_ITEM = '[education history] history deleted',
 }
 
 export const actions = {

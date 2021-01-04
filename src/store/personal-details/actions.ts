@@ -1,4 +1,4 @@
-import { PersonalDetails } from 'src/models/general';
+import { PersonalDetails } from 'src/models/personalDetails';
 
 export enum ACTION_TYPE {
   SET_SECTION_TITLE = '[personal-details] Section Title updated',

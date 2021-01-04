@@ -1,4 +1,4 @@
-import { IProfessionalSummary } from 'src/models/general';
+import { IProfessionalSummary } from 'src/models/professionalSummary';
 
 export const professionalSummaryFallbackState = (): IProfessionalSummary => ({
   summary: '',

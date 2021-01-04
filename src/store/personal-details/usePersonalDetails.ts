@@ -1,5 +1,5 @@
 import { useContext, useMemo } from 'react';
-import { PersonalDetails } from 'src/models/general';
+import { PersonalDetails } from 'src/models/personalDetails';
 import { GlobalContext } from '../GlobalState';
 import { actions } from './actions';
 

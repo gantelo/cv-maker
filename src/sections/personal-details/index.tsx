@@ -1,6 +1,6 @@
 import { InputCleanInline, InputFull } from 'src/components';
 
-import { PersonalDetails } from 'src/models/general';
+import { PersonalDetails } from 'src/models/personalDetails';
 import styles from './styles.module.css';
 import { usePersonalDetails } from 'src/store/personal-details/usePersonalDetails';
 

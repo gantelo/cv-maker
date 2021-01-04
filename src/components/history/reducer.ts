@@ -1,4 +1,4 @@
-import { History, IHistory } from 'src/models/general';
+import { History, IHistory } from 'src/models/history';
 
 import { IAction } from 'src/store/types';
 

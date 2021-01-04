@@ -1,4 +1,4 @@
-import { IEmploymentHistory } from 'src/models/general';
+import { IEmploymentHistory } from 'src/models/history';
 
 export const employmentHistoryFallbackState = (): IEmploymentHistory => ({
   items: [],

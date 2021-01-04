@@ -1,6 +1,6 @@
 import { ACTION_TYPE } from './actions';
 import { IAction } from 'src/store/types';
-import { IProfessionalSummary } from 'src/models/general';
+import { IProfessionalSummary } from 'src/models/professionalSummary';
 
 export const reducer = (state: IProfessionalSummary, { type, payload }: IAction): IProfessionalSummary => {
   switch (type) {

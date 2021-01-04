@@ -1,6 +1,6 @@
 import { ACTION_TYPE } from './actions';
 import { IAction } from 'src/store/types';
-import { IEmploymentHistory, IHistory, History } from 'src/models/history';
+import { IEducationHistory, IHistory, History } from 'src/models/history';
 
 const initialState: IHistory = {
   [History.JOB_TITLE]: 'Something',
@@ -10,7 +10,7 @@ const initialState: IHistory = {
   [History.CITY]: '',
 };
 
-export const reducer = (state: IEmploymentHistory, { type, payload }: IAction): IEmploymentHistory => {
+export const reducer = (state: IEducationHistory, { type, payload }: IAction): IEducationHistory => {
   switch (type) {
     case ACTION_TYPE.SET_SECTION_TITLE:
       return { ...state, sectionTitle: payload.value };

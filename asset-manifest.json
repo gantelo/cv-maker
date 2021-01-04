@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/cv-maker/static/css/main.208148ba.chunk.css",
+    "main.js": "/cv-maker/static/js/main.655d0e9e.chunk.js",
+    "main.js.map": "/cv-maker/static/js/main.655d0e9e.chunk.js.map",
+    "runtime-main.js": "/cv-maker/static/js/runtime-main.86af3116.js",
+    "runtime-main.js.map": "/cv-maker/static/js/runtime-main.86af3116.js.map",
+    "static/js/2.1a8e39c2.chunk.js": "/cv-maker/static/js/2.1a8e39c2.chunk.js",
+    "static/js/2.1a8e39c2.chunk.js.map": "/cv-maker/static/js/2.1a8e39c2.chunk.js.map",
+    "static/js/3.15c3f2bb.chunk.js": "/cv-maker/static/js/3.15c3f2bb.chunk.js",
+    "static/js/3.15c3f2bb.chunk.js.map": "/cv-maker/static/js/3.15c3f2bb.chunk.js.map",
+    "index.html": "/cv-maker/index.html",
+    "static/css/main.208148ba.chunk.css.map": "/cv-maker/static/css/main.208148ba.chunk.css.map",
+    "static/js/2.1a8e39c2.chunk.js.LICENSE.txt": "/cv-maker/static/js/2.1a8e39c2.chunk.js.LICENSE.txt",
+    "static/media/ArrowDown.7a5d1189.svg": "/cv-maker/static/media/ArrowDown.7a5d1189.svg",
+    "static/media/edit.45f71a77.svg": "/cv-maker/static/media/edit.45f71a77.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.86af3116.js",
+    "static/js/2.1a8e39c2.chunk.js",
+    "static/css/main.208148ba.chunk.css",
+    "static/js/main.655d0e9e.chunk.js"
+  ]
+}

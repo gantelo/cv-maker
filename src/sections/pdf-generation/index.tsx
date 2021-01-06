@@ -1,8 +1,6 @@
-import { Page, Text, Document } from '@react-pdf/renderer';
-import { useEffect } from 'react';
+import { Page, Text, Document, Font } from '@react-pdf/renderer';
 import { IPersonalDetails } from 'src/models/personalDetails';
 import { useHeader } from 'src/store/header/useHeader';
-import { usePersonalDetails } from 'src/store/personal-details/usePersonalDetails';
 import { styles } from './styles';
 
 interface IDocProps {

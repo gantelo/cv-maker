@@ -1,4 +1,35 @@
-import { StyleSheet } from '@react-pdf/renderer';
+import { Font, StyleSheet } from '@react-pdf/renderer';
+import RobotoRegular from '../../assets/Roboto/Roboto-Regular.ttf';
+import RobotoItalic from '../../assets/Roboto/Roboto-Italic.ttf';
+import RobotoBlack from '../../assets/Roboto/Roboto-Black.ttf';
+import RobotoBold from '../../assets/Roboto/Roboto-Bold.ttf';
+import RobotoBoldItalic from '../../assets/Roboto/Roboto-BoldItalic.ttf';
+import RobotoLight from '../../assets/Roboto/Roboto-Light.ttf';
+import RobotoLightItalic from '../../assets/Roboto/Roboto-LightItalic.ttf';
+import RobotoBlackItalic from '../../assets/Roboto/Roboto-BlackItalic.ttf';
+import RobotoMedium from '../../assets/Roboto/Roboto-Medium.ttf';
+import RobotoMediumItalic from '../../assets/Roboto/Roboto-MediumItalic.ttf';
+import RobotoThin from '../../assets/Roboto/Roboto-Thin.ttf';
+import RobotoThinItalic from '../../assets/Roboto/Roboto-ThinItalic.ttf';
+
+Font.register({
+  family: 'Roboto',
+  format: 'trueType',
+  fonts: [
+    { src: RobotoRegular }, // font-style: normal, font-weight: normal
+    { src: RobotoItalic, fontStyle: 'italic' },
+    { src: RobotoBlack, fontWeight: 'semibold' },
+    { src: RobotoBold, fontWeight: 'bold' },
+    { src: RobotoBoldItalic, fontStyle: 'italic', fontWeight: 'bold' },
+    { src: RobotoLight, fontWeight: 'light' },
+    { src: RobotoLightItalic, fontStyle: 'italic', fontWeight: 'light' },
+    { src: RobotoBlackItalic, fontStyle: 'italic', fontWeight: 'semibold' },
+    { src: RobotoMedium, fontWeight: 'medium' },
+    { src: RobotoMediumItalic, fontStyle: 'italic', fontWeight: 'medium' },
+    { src: RobotoThin, fontWeight: 'thin' },
+    { src: RobotoThinItalic, fontStyle: 'italic', fontWeight: 'thin' },
+  ],
+});
 
 export const styles = StyleSheet.create({
   body: {
@@ -14,6 +45,7 @@ export const styles = StyleSheet.create({
     fontSize: 12,
     textAlign: 'center',
     marginBottom: 40,
+    fontFamily: 'Roboto',
   },
   subtitle: {
     fontSize: 18,
@@ -33,6 +65,8 @@ export const styles = StyleSheet.create({
     marginBottom: 20,
     textAlign: 'center',
     color: 'grey',
+    fontFamily: 'Roboto',
+    fontStyle: 'italic',
   },
   pageNumber: {
     position: 'absolute',

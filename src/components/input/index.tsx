@@ -44,7 +44,7 @@ const Input = ({ fontSize, fontWeight, overrideStyles, editIcon, placeholder, va
             errored ? overrideStyles?.nameError || styles.nameError : ''
           } ${fontSize} ${fontWeight}`}
           name={inputName}
-          autoComplete={'' + Math.random()}
+          autoComplete={'' + new Date().getTime()}
           onMouseEnter={focusOn}
           onMouseLeave={focusOff}
           onBlur={trigger}

@@ -1,7 +1,7 @@
 import './styles.css';
 
-import { Body, Header } from 'src/sections';
-import React, { memo, useEffect, useRef, useState } from 'react';
+import { Body, Footer, Header } from 'src/sections';
+import React, { useEffect, useState } from 'react';
 import { PDFViewer } from '@react-pdf/renderer';
 import { MyDocument } from '../pdf-generation';
 import { usePersonalDetails } from 'src/store/personal-details/usePersonalDetails';
@@ -23,6 +23,7 @@ const Main = () => {
       <div className="mainContainer">
         <Header />
         <Body />
+        <Footer />
       </div>
       <PDFViewer className="latexContainer">
         <MyDocument personalDetails={personalDetailsProps} />

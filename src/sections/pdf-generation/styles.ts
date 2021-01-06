@@ -32,49 +32,58 @@ Font.register({
 });
 
 export const styles = StyleSheet.create({
-  body: {
-    paddingTop: 35,
-    paddingBottom: 65,
-    paddingHorizontal: 35,
-  },
   title: {
-    fontSize: 24,
-    textAlign: 'center',
-  },
-  author: {
-    fontSize: 12,
-    textAlign: 'center',
-    marginBottom: 40,
+    fontSize: 8,
+    marginTop: 14,
     fontFamily: 'Roboto',
   },
-  subtitle: {
-    fontSize: 18,
-    margin: 12,
+  sectionTitle: {
+    fontSize: 10,
+    marginTop: 22,
+    marginBottom: 8,
+    fontFamily: 'Roboto',
+    fontWeight: 'medium',
   },
-  text: {
-    margin: 12,
-    fontSize: 14,
-    textAlign: 'justify',
+  profileSummary: {
+    fontSize: 9,
+    marginTop: 2,
+    fontFamily: 'Roboto',
   },
-  image: {
-    marginVertical: 15,
-    marginHorizontal: 100,
+  subHeaderContainer: {
+    textAlign: 'center',
   },
   header: {
-    fontSize: 12,
-    marginBottom: 20,
+    fontSize: 17,
+    marginTop: 30,
     textAlign: 'center',
-    color: 'grey',
     fontFamily: 'Roboto',
-    fontStyle: 'italic',
+    fontWeight: 'medium',
   },
-  pageNumber: {
-    position: 'absolute',
-    fontSize: 12,
-    bottom: 30,
-    left: 0,
-    right: 0,
-    textAlign: 'center',
-    color: 'grey',
+  sections: {
+    marginTop: 15,
+    display: 'flex',
+    flexDirection: 'row',
+    marginLeft: 60,
+    paddingRight: 40,
+  },
+  sectionRight: {
+    marginLeft: 50,
+    width: '70%',
+    display: 'flex',
+  },
+  sectionLeft: {
+    fontFamily: 'Roboto',
+    alignItems: 'center',
+  },
+  detailsItem: {
+    fontSize: 9,
+    marginTop: 2,
+    fontFamily: 'Roboto',
+  },
+  linksItem: {
+    fontSize: 9,
+    marginTop: 5,
+    fontFamily: 'Roboto',
+    color: 'black',
   },
 });

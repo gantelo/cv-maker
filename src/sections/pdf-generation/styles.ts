@@ -49,16 +49,6 @@ export const styles = StyleSheet.create({
     marginTop: 2,
     fontFamily: 'Roboto',
   },
-  subHeaderContainer: {
-    textAlign: 'center',
-  },
-  header: {
-    fontSize: 17,
-    marginTop: 30,
-    textAlign: 'center',
-    fontFamily: 'Roboto',
-    fontWeight: 'medium',
-  },
   sections: {
     marginTop: 15,
     display: 'flex',
@@ -74,16 +64,5 @@ export const styles = StyleSheet.create({
   sectionLeft: {
     fontFamily: 'Roboto',
     alignItems: 'center',
-  },
-  detailsItem: {
-    fontSize: 9,
-    marginTop: 2,
-    fontFamily: 'Roboto',
-  },
-  linksItem: {
-    fontSize: 9,
-    marginTop: 5,
-    fontFamily: 'Roboto',
-    color: 'black',
   },
 });

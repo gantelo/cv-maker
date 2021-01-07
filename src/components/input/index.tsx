@@ -48,7 +48,7 @@ const Input = ({ fontSize, fontWeight, overrideStyles, editIcon, placeholder, va
           onMouseEnter={focusOn}
           onMouseLeave={focusOff}
           onBlur={trigger}
-          placeholder={placeholder || 'Enter title'}
+          placeholder={placeholder || 'Enter name'}
         />
         <span className={overrideStyles?.underlineAnimation || styles.underlineAnimation} />
         {editIcon && (

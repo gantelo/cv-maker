@@ -1,10 +1,10 @@
 import { ILinks, MinimalHistory } from 'src/models/minimalHistory';
 
-import { Text, Link, Image, View } from '@react-pdf/renderer';
+import { Text, Image, View } from '@react-pdf/renderer';
 import Circle from '../../assets/Circle.png';
 import { styles } from './styles';
 
-const Links = (props: ILinks) => (
+const Skills = (props: ILinks) => (
   <>
     <View style={{ flexDirection: 'row', width: '100%', alignItems: 'center', justifyContent: 'center' }}>
       <Image src={Circle} style={{ height: 3, width: 3, top: 7, right: 6 }} />
@@ -13,12 +13,17 @@ const Links = (props: ILinks) => (
     </View>
     {props.items.map((item, idx) => {
       return (
-        <Link style={styles.linksItem} src={item[MinimalHistory.VALUE]} key={`link-key-item-${idx}`}>
-          {item[MinimalHistory.NAME]}
-        </Link>
+        <View key={`skill-item-${idx}`}>
+          <Text style={styles.linksItem}>{item[MinimalHistory.NAME]}</Text>
+          {Boolean(parseInt(item[MinimalHistory.VALUE])) && (
+            <View style={styles.barContainer}>
+              <View style={[styles.blackBar, { width: `${item[MinimalHistory.VALUE]}%` }]} />
+            </View>
+          )}
+        </View>
       );
     })}
   </>
 );
 
-export default Links;
+export default Skills;

@@ -53,6 +53,8 @@ export const styles = StyleSheet.create({
     marginTop: 15,
     display: 'flex',
     flexDirection: 'row',
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start',
     marginLeft: 60,
     paddingRight: 40,
   },

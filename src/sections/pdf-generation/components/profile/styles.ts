@@ -11,6 +11,7 @@ export const styles = StyleSheet.create({
   profileSummary: {
     fontSize: 9,
     marginTop: 2,
+    marginLeft: 10,
     fontFamily: 'Roboto',
   },
 });

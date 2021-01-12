@@ -15,8 +15,8 @@ const Details = (props: IPersonalDetails) => {
         <Text style={styles.sectionTitle}>{defaultTitle.toLocaleUpperCase()}</Text>
         <Image src={Circle} style={{ height: 3, width: 3, top: 7, left: 6 }} />
       </View>
-      <Text style={styles.detailsItem}>{props[PersonalDetails.CITY]}</Text>
-      <Text style={styles.detailsItem}>{props[PersonalDetails.COUNTRY]}</Text>
+      <Text style={styles.detailsItem}>{props[PersonalDetails.CITY].toLocaleUpperCase()}</Text>
+      <Text style={styles.detailsItem}>{props[PersonalDetails.COUNTRY].toLocaleUpperCase()}</Text>
       <Text style={styles.detailsItem}>{props[PersonalDetails.PHONE]}</Text>
       <Text style={[styles.detailsItem, { textDecoration: 'underline' }]}>{props[PersonalDetails.EMAIL]}</Text>
     </>

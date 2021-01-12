@@ -40,8 +40,8 @@ export const MyDocument = ({
         </View>
         <View style={styles.sectionRight}>
           <Profile {...pSummary} />
-          <History {...employment} />
-          <History {...education} />
+          <History history={employment} icon="employment" />
+          <History history={education} icon="education" />
         </View>
       </View>
     </Page>

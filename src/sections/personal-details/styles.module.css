@@ -9,3 +9,67 @@
   justify-content: space-between;
   width: 100%;
 }
+
+.uploadContainer {
+  display: flex;
+  align-items: center;
+  width: 46%;
+}
+
+.imageContainer {
+  border-radius: 3px;
+  width: 80px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8%;
+}
+
+.editButton {
+  display: flex;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #66b6c1;
+  margin-bottom: 10%;
+  cursor: pointer;
+}
+
+.deleteButton {
+  display: flex;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #929292;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  text-decoration: underline;
+}
+
+.deleteButton:before {
+  display: block;
+  content: ' ';
+  background-image: url('../../assets/TrashBin.svg');
+  background-size: 14px 14px;
+  height: 14px;
+  width: 14px;
+  margin-right: 8px;
+}
+
+.editButton:hover {
+  text-decoration: underline;
+}
+
+.editButton:before {
+  display: block;
+  content: ' ';
+  background-image: url('../../assets/edit.svg');
+  background-size: 14px 14px;
+  height: 14px;
+  width: 14px;
+  margin-right: 8px;
+}

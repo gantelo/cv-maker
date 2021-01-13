@@ -9,4 +9,5 @@ export const personalDetailsFallbackState = (): IPersonalDetails => ({
   [PersonalDetails.COUNTRY]: '',
   [PersonalDetails.CITY]: '',
   [PersonalDetails.SECTION_TITLE]: 'Personal Details',
+  [PersonalDetails.PROFILE_PICTURE]: '',
 });

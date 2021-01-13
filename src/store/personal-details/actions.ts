@@ -9,6 +9,7 @@ export enum ACTION_TYPE {
   SET_PHONE = '[personal-details] Phone updated',
   SET_COUNTRY = '[personal-details] Country updated',
   SET_CITY = '[personal-details] City updated',
+  SET_PROFILE_PICTURE = '[personal-details] Profile picture updated',
 }
 
 export const actions = {
@@ -20,4 +21,5 @@ export const actions = {
   [PersonalDetails.PHONE]: (value: string) => ({ type: ACTION_TYPE.SET_PHONE, payload: value }),
   [PersonalDetails.COUNTRY]: (value: string) => ({ type: ACTION_TYPE.SET_COUNTRY, payload: value }),
   [PersonalDetails.CITY]: (value: string) => ({ type: ACTION_TYPE.SET_CITY, payload: value }),
+  [PersonalDetails.PROFILE_PICTURE]: (value: string) => ({ type: ACTION_TYPE.SET_PROFILE_PICTURE, payload: value }),
 };

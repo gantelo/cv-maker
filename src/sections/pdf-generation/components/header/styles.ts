@@ -14,9 +14,17 @@ export const styles = StyleSheet.create({
   },
   header: {
     fontSize: 17,
-    marginTop: 30,
+    marginTop: 15,
     textAlign: 'center',
     fontFamily: 'Roboto',
     fontWeight: 'medium',
+  },
+  profilePic: {
+    width: 55,
+    height: 55,
+    borderRadius: 3,
+    marginTop: 30,
+    justifyContent: 'center',
+    alignSelf: 'center',
   },
 });

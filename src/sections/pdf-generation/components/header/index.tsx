@@ -11,6 +11,9 @@ interface IHeaderProps {
 
 const Header = ({ headerProps, personalProps }: IHeaderProps) => (
   <>
+    {Boolean(personalProps['Profile Picture']) && (
+      <Image style={styles.profilePic} src={personalProps['Profile Picture']} />
+    )}
     <Text style={styles.header}>{headerProps.name.toLocaleUpperCase()}</Text>
     <View style={styles.subHeaderContainer}>
       <Text style={styles.title}>{personalProps[PersonalDetails.JOB_TITLE].toLocaleUpperCase()}</Text>

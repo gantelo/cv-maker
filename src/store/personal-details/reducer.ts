@@ -20,6 +20,8 @@ export const reducer = (state: IPersonalDetails, { type, payload }: IAction): IP
       return { ...state, [PersonalDetails.PHONE]: payload };
     case ACTION_TYPE.SET_SECTION_TITLE:
       return { ...state, [PersonalDetails.SECTION_TITLE]: payload };
+    case ACTION_TYPE.SET_PROFILE_PICTURE:
+      return { ...state, [PersonalDetails.PROFILE_PICTURE]: payload };
     default:
       return state;
   }

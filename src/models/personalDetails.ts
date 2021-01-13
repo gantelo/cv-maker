@@ -7,6 +7,7 @@ export enum PersonalDetails {
   PHONE = 'Phone',
   COUNTRY = 'Country',
   CITY = 'City',
+  PROFILE_PICTURE = 'Profile Picture',
 }
 
 export interface IPersonalDetails {
@@ -18,4 +19,5 @@ export interface IPersonalDetails {
   [PersonalDetails.PHONE]: string;
   [PersonalDetails.COUNTRY]: string;
   [PersonalDetails.CITY]: string;
+  [PersonalDetails.PROFILE_PICTURE]: string;
 }

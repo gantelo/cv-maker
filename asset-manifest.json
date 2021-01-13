@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/cv-maker/static/css/main.bd85543b.chunk.css",
-    "main.js": "/cv-maker/static/js/main.7348abaa.chunk.js",
-    "main.js.map": "/cv-maker/static/js/main.7348abaa.chunk.js.map",
-    "runtime-main.js": "/cv-maker/static/js/runtime-main.e5e9a04d.js",
-    "runtime-main.js.map": "/cv-maker/static/js/runtime-main.e5e9a04d.js.map",
-    "static/js/2.6f8ba10c.chunk.js": "/cv-maker/static/js/2.6f8ba10c.chunk.js",
-    "static/js/2.6f8ba10c.chunk.js.map": "/cv-maker/static/js/2.6f8ba10c.chunk.js.map",
-    "static/js/3.9ad79817.chunk.js": "/cv-maker/static/js/3.9ad79817.chunk.js",
-    "static/js/3.9ad79817.chunk.js.map": "/cv-maker/static/js/3.9ad79817.chunk.js.map",
+    "main.css": "/cv-maker/static/css/main.b3a4070c.chunk.css",
+    "main.js": "/cv-maker/static/js/main.c44541d9.chunk.js",
+    "main.js.map": "/cv-maker/static/js/main.c44541d9.chunk.js.map",
+    "runtime-main.js": "/cv-maker/static/js/runtime-main.4654c268.js",
+    "runtime-main.js.map": "/cv-maker/static/js/runtime-main.4654c268.js.map",
+    "static/js/2.b371d09f.chunk.js": "/cv-maker/static/js/2.b371d09f.chunk.js",
+    "static/js/2.b371d09f.chunk.js.map": "/cv-maker/static/js/2.b371d09f.chunk.js.map",
+    "static/js/3.ec688575.chunk.js": "/cv-maker/static/js/3.ec688575.chunk.js",
+    "static/js/3.ec688575.chunk.js.map": "/cv-maker/static/js/3.ec688575.chunk.js.map",
     "index.html": "/cv-maker/index.html",
-    "static/css/main.bd85543b.chunk.css.map": "/cv-maker/static/css/main.bd85543b.chunk.css.map",
-    "static/js/2.6f8ba10c.chunk.js.LICENSE.txt": "/cv-maker/static/js/2.6f8ba10c.chunk.js.LICENSE.txt",
+    "static/css/main.b3a4070c.chunk.css.map": "/cv-maker/static/css/main.b3a4070c.chunk.css.map",
+    "static/js/2.b371d09f.chunk.js.LICENSE.txt": "/cv-maker/static/js/2.b371d09f.chunk.js.LICENSE.txt",
     "static/media/ArrowDown.7a5d1189.svg": "/cv-maker/static/media/ArrowDown.7a5d1189.svg",
     "static/media/Roboto-Black.1224b64c.ttf": "/cv-maker/static/media/Roboto-Black.1224b64c.ttf",
     "static/media/Roboto-BlackItalic.279b831d.ttf": "/cv-maker/static/media/Roboto-BlackItalic.279b831d.ttf",
@@ -25,12 +25,12 @@
     "static/media/Roboto-Regular.03523cf5.ttf": "/cv-maker/static/media/Roboto-Regular.03523cf5.ttf",
     "static/media/Roboto-Thin.c38fab23.ttf": "/cv-maker/static/media/Roboto-Thin.c38fab23.ttf",
     "static/media/Roboto-ThinItalic.082b9e84.ttf": "/cv-maker/static/media/Roboto-ThinItalic.082b9e84.ttf",
-    "static/media/edit.45f71a77.svg": "/cv-maker/static/media/edit.45f71a77.svg"
+    "static/media/styles.module.css": "/cv-maker/static/media/edit.bdb71fcf.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e5e9a04d.js",
-    "static/js/2.6f8ba10c.chunk.js",
-    "static/css/main.bd85543b.chunk.css",
-    "static/js/main.7348abaa.chunk.js"
+    "static/js/runtime-main.4654c268.js",
+    "static/js/2.b371d09f.chunk.js",
+    "static/css/main.b3a4070c.chunk.css",
+    "static/js/main.c44541d9.chunk.js"
   ]
 }

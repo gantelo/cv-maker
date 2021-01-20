@@ -64,6 +64,7 @@ export const styles = StyleSheet.create({
     display: 'flex',
   },
   sectionLeft: {
+    maxWidth: '15%',
     fontFamily: 'Roboto',
     alignItems: 'center',
   },

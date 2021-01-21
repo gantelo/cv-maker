@@ -12,5 +12,6 @@ export const styles = StyleSheet.create({
     fontSize: 9,
     marginTop: 2,
     fontFamily: 'Roboto',
+    textOverflow: '',
   },
 });

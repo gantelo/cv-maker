@@ -18,7 +18,9 @@ const Details = (props: IPersonalDetails) => {
       <Text style={styles.detailsItem}>{props[PersonalDetails.CITY].toLocaleUpperCase()}</Text>
       <Text style={styles.detailsItem}>{props[PersonalDetails.COUNTRY].toLocaleUpperCase()}</Text>
       <Text style={styles.detailsItem}>{props[PersonalDetails.PHONE]}</Text>
-      <Text style={[styles.detailsItem, { textDecoration: 'underline' }]}>{props[PersonalDetails.EMAIL]}</Text>
+      <Text style={[styles.detailsItem, { textDecoration: 'underline' }]} wrap={false}>
+        {props[PersonalDetails.EMAIL]}
+      </Text>
     </>
   );
 };

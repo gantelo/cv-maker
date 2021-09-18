@@ -1,6 +1,6 @@
 import { IHeader } from 'src/models/general';
 
 export const headerFallbackState = (): IHeader => ({
-  name: '',
+  name: 'John Doe',
   percentage: 0,
 });

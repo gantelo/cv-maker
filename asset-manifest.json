@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/cv-maker/static/css/main.b3a4070c.chunk.css",
-    "main.js": "/cv-maker/static/js/main.feaa8b87.chunk.js",
-    "main.js.map": "/cv-maker/static/js/main.feaa8b87.chunk.js.map",
+    "main.js": "/cv-maker/static/js/main.e6d0c807.chunk.js",
+    "main.js.map": "/cv-maker/static/js/main.e6d0c807.chunk.js.map",
     "runtime-main.js": "/cv-maker/static/js/runtime-main.4654c268.js",
     "runtime-main.js.map": "/cv-maker/static/js/runtime-main.4654c268.js.map",
     "static/js/2.b371d09f.chunk.js": "/cv-maker/static/js/2.b371d09f.chunk.js",
@@ -31,6 +31,6 @@
     "static/js/runtime-main.4654c268.js",
     "static/js/2.b371d09f.chunk.js",
     "static/css/main.b3a4070c.chunk.css",
-    "static/js/main.feaa8b87.chunk.js"
+    "static/js/main.e6d0c807.chunk.js"
   ]
 }
